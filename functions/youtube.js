@@ -11,7 +11,7 @@ exports.handler = async (event) => {
     key: process.env.API_KEY,
   });
   const headers = {
-    "Access-Control-Allow-Origin": process.env.HOST,
+    "Access-Control-Allow-Origin": process.env.LOCAL_HOST,
     Vary: "Origin",
   };
 
