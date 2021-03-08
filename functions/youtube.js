@@ -8,7 +8,7 @@ exports.handler = async (event) => {
   const apiMethod = path.split("/").pop();
   const parameters = querystring.stringify({
     ...queryStringParameters,
-    key: process.env.API_KEY,
+    key: process.env.YOUTUBE_API_KEY,
   });
   const headers = {
     "Access-Control-Allow-Origin": process.env.LOCAL_HOST,
