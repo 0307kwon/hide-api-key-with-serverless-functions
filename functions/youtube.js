@@ -11,7 +11,7 @@ exports.handler = async (event) => {
     key: process.env.YOUTUBE_API_KEY,
   });
   const headers = {
-    "Access-Control-Allow-Origin": process.env.LOCAL_HOST,
+    "Access-Control-Allow-Origin": process.env.REMOTE_HOST,
     Vary: "Origin",
   };
 
